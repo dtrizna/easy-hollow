@@ -1,0 +1,2 @@
+C:\Users\dtrizna-low\Desktop\RAT\RAT_Q3\ShowPid\obj\x64\Release\ShowPid.csprojAssemblyReference.cache
+C:\Users\dtrizna-low\Desktop\RAT\RAT_Q3\ShowPid\obj\x64\Release\ShowPid.csproj.CoreCompileInputs.cache

@@ -1,0 +1,6 @@
+C:\Users\dtrizna-low\Desktop\RAT\RAT_Q3\ShowPid\obj\Debug\ShowPid.csproj.CoreCompileInputs.cache
+C:\Users\dtrizna-low\Desktop\RAT\RAT_Q3\ShowPid\bin\Debug\ShowPid.exe.config
+C:\Users\dtrizna-low\Desktop\RAT\RAT_Q3\ShowPid\bin\Debug\ShowPid.exe
+C:\Users\dtrizna-low\Desktop\RAT\RAT_Q3\ShowPid\bin\Debug\ShowPid.pdb
+C:\Users\dtrizna-low\Desktop\RAT\RAT_Q3\ShowPid\obj\Debug\ShowPid.exe
+C:\Users\dtrizna-low\Desktop\RAT\RAT_Q3\ShowPid\obj\Debug\ShowPid.pdb
